@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="titulo"><img src="./assets/image/logo avatar" alt=""></h1>
+            <section class="botNv">
+                <button id="avatar" class="asd">Avatars</button>
+                <button id="todos" class="asd">Todos</button>
+                <button id="nacionFuego" class="asd">Fuego</button>
+                <button id="nomadasAire"class="asd">Aire</button>
+                <button id="tribuAgua"class="asd">Agua</button>
+                <button id="reinoTierra" class="asd">Tierra</button>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <div id="tarjetas"></div>
+        <section id="botones">
+            <p id="pagActual"></p>
+            <p id="pagTotal"></p>
+            <div id="paginado">
+                <button id="aant"><<</button>
+                <button id="ant"><</button>
+                <button id="post">></button>
+                <button id="poost">>></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Footer</h4>
+        <p>2022 Copyright </p>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+    <button class="btn-scrolltop" id="btn_scrolltop">ʌ</button>
+    <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+        btn_scrolltop.addEventListener(`click`, () => {
+           window.scrollTo(0, 0)
+        })
+
+        window.onscroll = () => {
+            if (window.scrollY < 200) {
+            btn_scrolltop.classList.remove("btn-scrolltop-on")
+            } else {
+            btn_scrolltop.classList.add("btn-scrolltop-on")                
+            }
+
+        }
+    </script>
+</body>
+
+</html>
